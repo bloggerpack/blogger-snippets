@@ -1,2 +1,3 @@
-# code-snippets
-Blogger code snippets
+# Blogger code snippets
+
+...
