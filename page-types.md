@@ -47,9 +47,7 @@ Conditional tags for different page types, which allows you to specify a part of
 <b:if cond='data:view.isError'>
   <!-- https://example.blogspot.com/<404> -->
 </b:if>
-```
 
-```html
 # Preview page
 <b:if cond='data:view.isPreview'>
   <!-- Preview page -->
