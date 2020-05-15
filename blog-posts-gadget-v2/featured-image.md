@@ -188,7 +188,6 @@ The featured image for the post.
   <b:if cond='data:post.featuredImage'>
     <b:if cond='data:post.featuredImage.isYoutube'>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.youtubeMaxResDefaultUrl.isResizable ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl, data:size, data:ratio) : data:post.featuredImage.youtubeMaxResDefaultUrl' name='src'/>
@@ -198,7 +197,6 @@ The featured image for the post.
       </a>
     <b:else/>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, data:size, data:ratio) : data:post.featuredImage' name='src'/>
@@ -209,7 +207,6 @@ The featured image for the post.
     </b:if>
   <b:else/><!-- fallback -->
     <a expr:href='data:post.link ?: data:post.url'>
-      <b:attr name='b:whitespace' value='remove'/>
       <img>
         <!-- class --><b:class name='class-name'/>
         <!-- src --><b:attr expr:value='resizeImage("https://lh3.googleusercontent.com/kBzrgG0CUVwpWe8oT8iPxL8HhKQdNVj1AX5BR2Y0Q_zoSpxHGPRtcysgTJsb8ZEsYmbWoNm-nEOyjBc03w=w1920-h1080-rw-no", data:size, data:ratio)' name='src'/>
@@ -231,7 +228,6 @@ The featured image for the post.
   <b:if cond='data:post.featuredImage'>
     <b:if cond='data:post.featuredImage.isYoutube'>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.youtubeMaxResDefaultUrl.isResizable ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl, data:size, data:ratio) : data:post.featuredImage.youtubeMaxResDefaultUrl' name='src'/>
@@ -243,7 +239,6 @@ The featured image for the post.
       </a>
     <b:else/>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, data:size, data:ratio) : data:post.featuredImage' name='src'/>
@@ -268,7 +263,6 @@ The featured image for the post.
   <b:if cond='data:post.featuredImage'>
     <b:if cond='data:post.featuredImage.isYoutube'>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.youtubeMaxResDefaultUrl.isResizable ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl, data:size, data:ratio) : data:post.featuredImage.youtubeMaxResDefaultUrl' name='src'/>
@@ -280,7 +274,6 @@ The featured image for the post.
       </a>
     <b:else/>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, data:size, data:ratio) : data:post.featuredImage' name='src'/>
@@ -293,7 +286,6 @@ The featured image for the post.
     </b:if>
   <b:else/><!-- fallback -->
     <a expr:href='data:post.link ?: data:post.url'>
-      <b:attr name='b:whitespace' value='remove'/>
       <img>
         <!-- class --><b:class name='class-name'/>
         <!-- src --><b:attr expr:value='resizeImage("https://lh3.googleusercontent.com/kBzrgG0CUVwpWe8oT8iPxL8HhKQdNVj1AX5BR2Y0Q_zoSpxHGPRtcysgTJsb8ZEsYmbWoNm-nEOyjBc03w=w1920-h1080-rw-no", data:size, data:ratio)' name='src'/>
