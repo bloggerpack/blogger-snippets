@@ -155,7 +155,6 @@ The featured image for the post.
   <b:if cond='data:post.featuredImage'>
     <b:if cond='data:post.featuredImage.isYoutube'>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.youtubeMaxResDefaultUrl.isResizable ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl, data:size, data:ratio) : data:post.featuredImage.youtubeMaxResDefaultUrl' name='src'/>
@@ -165,7 +164,6 @@ The featured image for the post.
       </a>
     <b:else/>
       <a expr:href='data:post.link ?: data:post.url'>
-        <b:attr name='b:whitespace' value='remove'/>
         <img>
           <!-- class --><b:class name='class-name'/>
           <!-- src --><b:attr expr:value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, data:size, data:ratio) : data:post.featuredImage' name='src'/>
