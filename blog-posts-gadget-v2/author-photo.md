@@ -94,7 +94,6 @@ Photo of the profile of the post author.
     </b:tag>
   <b:else/><!-- fallback -->
     <b:tag cond='data:post.author.profileUrl' expr:href='data:post.author.profileUrl' name='a'>
-      <b:attr cond='data:post.author.profileUrl' name='b:whitespace' value='remove'/>
       <img>
         <!-- class --><b:class name='class-name'/>
         <!-- src --><b:attr name='src' value='https://via.placeholder.com/128x128/777/eee?text=No+Image'/>
