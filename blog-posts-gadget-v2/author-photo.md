@@ -65,7 +65,6 @@ Photo of the profile of the post author.
 <b:with value='"1:1"' var='ratio'>
   <b:if cond='data:post.author and data:post.author.authorPhoto'>
     <b:tag cond='data:post.author.profileUrl' expr:href='data:post.author.profileUrl' name='a'>
-      <b:attr cond='data:post.author.profileUrl' name='b:whitespace' value='remove'/>
       <img>
         <!-- class --><b:class name='class-name'/>
         <!-- src --><b:attr expr:value='data:post.author.authorPhoto.image.isResizable ? resizeImage(data:post.author.authorPhoto.image, data:size, data:ratio) : data:post.author.authorPhoto.image' name='src'/>
@@ -86,7 +85,6 @@ Photo of the profile of the post author.
 <b:with value='"1:1"' var='ratio'>
   <b:if cond='data:post.author and data:post.author.authorPhoto'>
     <b:tag cond='data:post.author.profileUrl' expr:href='data:post.author.profileUrl' name='a'>
-      <b:attr cond='data:post.author.profileUrl' name='b:whitespace' value='remove'/>
       <img>
         <!-- class --><b:class name='class-name'/>
         <!-- src --><b:attr expr:value='data:post.author.authorPhoto.image.isResizable ? resizeImage(data:post.author.authorPhoto.image, data:size, data:ratio) : data:post.author.authorPhoto.image' name='src'/>
