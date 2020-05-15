@@ -21,7 +21,7 @@ Conditional tags for different page types, which allows you to specify a part of
 </b:if>
 
 # Search (label) page
-<b:if cond='data:view.search.label'>
+<b:if cond='data:view.isLabelSearch'>
   <!-- 1. https://example.blogspot.com/search/label/<label-name> -->
   <!-- 2. https://example.blogspot.com/search?label=<label-name> -->
 </b:if>
@@ -32,7 +32,7 @@ Conditional tags for different page types, which allows you to specify a part of
 </b:if>
 
 # Search (default) page
-<b:if cond='data:view.search and !data:view.search.label and !data:view.search.query'>
+<b:if cond='data:view.isSearch and !data:view.isLabelSearch and !data:view.search.query'>
   <!-- https://example.blogspot.com/search -->
 </b:if>
 
