@@ -16,6 +16,7 @@ Title of the post.
 ### Default with fallback
 
 ```html
+<!-- Title -->
 <b:eval expr='data:post.title ? data:post.title : data:messages.noTitle'/>
 ```
 
