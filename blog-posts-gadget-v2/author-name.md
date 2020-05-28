@@ -16,6 +16,7 @@ Name of the profile of the post author.
 ### Default with fallback
 
 ```html
+<!-- Author name -->
 <b:eval expr='data:post.author ? data:post.author.name : "Anonymous"'/>
 ```
 
