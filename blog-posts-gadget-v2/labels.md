@@ -14,7 +14,9 @@ Labels of the post.
 <!-- Labels -->
 <b:if cond='data:post.labels'>
   <b:loop index='i' values='data:post.labels' var='label'>
-    <a expr:href='params(data:label.url, { max-results: "12" })'><data:label.name/></a>
+    <a expr:href='params(data:label.url, { max-results: "12" })'>
+      <data:label.name/>
+    </a>
   </b:loop>
 </b:if>
 ```
@@ -25,7 +27,9 @@ Labels of the post.
 <!-- Labels -->
 <b:if cond='data:post.labels'>
   <b:loop index='i' values='data:post.labels' var='label'>
-    <a expr:href='params(data:label.url, { max-results: "12" })'><data:label.name/></a>
+    <a expr:href='params(data:label.url, { max-results: "12" })'>
+      <data:label.name/>
+    </a>
   </b:loop>
 <b:else/><!-- fallback -->
   Unlabelled
@@ -38,7 +42,9 @@ Labels of the post.
 <!-- Labels -->
 <b:if cond='data:post.labels'>
   <b:loop index='i' values='data:post.labels' var='label'>
-    <a expr:href='params(data:label.url, { max-results: "12" })'><data:label.name/></a><b:if cond='data:i != (data:post.labels.size - 1)'>,</b:if>
+    <a expr:href='params(data:label.url, { max-results: "12" })'>
+      <data:label.name/>
+    </a><b:if cond='data:i != (data:post.labels.size - 1)'>,</b:if>
   </b:loop>
 </b:if>
 ```
@@ -49,7 +55,9 @@ Labels of the post.
 <!-- Labels -->
 <b:if cond='data:post.labels'>
   <b:loop index='i' values='data:post.labels' var='label'>
-    <a expr:href='params(data:label.url, { max-results: "12" })'><data:label.name/></a><b:if cond='data:i != (data:post.labels.size - 1)'>,</b:if>
+    <a expr:href='params(data:label.url, { max-results: "12" })'>
+      <data:label.name/>
+    </a><b:if cond='data:i != (data:post.labels.size - 1)'>,</b:if>
   </b:loop>
 <b:else/><!-- fallback -->
   Unlabelled
